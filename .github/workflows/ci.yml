@@ -124,7 +124,7 @@ jobs:
       - name: Run complexipy Analysis
         id: complexipy
         run: |
-          OUTPUT=$(complexipy template/ tests/)
+          OUTPUT=$(complexipy analysis_urban_poland/ tests/)
           
           echo "$OUTPUT"
           
@@ -179,7 +179,7 @@ jobs:
 
       - name: Test with Coverage
         run: |
-          poetry run coverage run --source=template --branch -m pytest
+          poetry run coverage run --source=analysis_urban_poland --branch -m pytest
           poetry run coverage xml
           
           poetry run diff-cover coverage.xml \

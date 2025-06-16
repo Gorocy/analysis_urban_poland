@@ -1,4 +1,4 @@
-# Template Python Repository
+# analysis_urban_poland
 
 This repository provides a minimal yet opinionated starting point for Python
 projects. It bundles common development tools and a GitHub Actions workflow so
